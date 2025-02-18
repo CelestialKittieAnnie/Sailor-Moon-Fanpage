@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailor Moon - Interactive Fun</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="interactive.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sailor Moon - Interactive Fun</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shows_movies_games_mangas.html">Shows, Movies, Games, and Mangas</a></li>
+                <li><a href="character_index.html">Character Index</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sailor_scouts.html">Sailor Scouts & Worlds</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Polls</h2>
+            <div id="polls">
+                <form id="poll-form">
+                    <p>Who is your favorite Sailor Scout?</p>
+                    <input type="radio" id="usagi" name="scout" value="Usagi">
+                    <label for="usagi">Usagi</label><br>
+                    <input type="radio" id="ami" name="scout" value="Ami">
+                    <label for="ami">Ami</label><br>
+                    <input type="radio" id="rei" name="scout" value="Rei">
+                    <label for="rei">Rei</label><br>
+                    <input type="radio" id="makoto" name="scout" value="Makoto">
+                    <label for="makoto">Makoto</label><br>
+                    <input type="radio" id="minako" name="scout" value="Minako">
+                    <label for="minako">Minako</label><br>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="poll-results"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Which Sailor Moon Character Are You?</h2>
+            <div id="character-quiz">
+                <button id="generate-character">Find Out!</button>
+                <p id="character-result"></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Trivia</h2>
+            <div id="trivia">
+                <button id="generate-trivia">Get a Trivia Question</button>
+                <p id="trivia-question"></p>
+                <p id="trivia-answer"></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sailor Scout Name Generator</h2>
+            <div id="scout-name-generator">
+                <form id="scout-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="birth-sign">Birth Sign:</label>
+                    <input type="text" id="birth-sign" name="birth-sign" required><br>
+                    <label for="zodiac">Zodiac:</label>
+                    <input type="text" id="zodiac" name="zodiac" required><br>
+                    <label for="birthstone">Birthstone:</label>
+                    <input type="text" id="birthstone" name="birthstone" required><br>
+                    <button type="submit">Generate Name</button>
+                </form>
+                <p id="scout-name-result"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sailor Moon Fan Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
